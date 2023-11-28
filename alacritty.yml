@@ -1,0 +1,100 @@
+## Set environment variables
+env:
+  TERM: alacritty
+  WINIT_X11_SCALE_FACTOR: "1.5"
+
+## Terminal window settings
+window:
+  dimensions:
+    columns: 82
+    lines: 25
+
+  padding:
+    x: 12 #og for both 12
+    y: 12
+
+  decorations: full
+  startup_mode: Windowed
+  dynamic_title: true #og=true
+
+  ## scrolling
+  history: 10000
+  multiplier: 3
+
+  ## Background opacity
+  opacity: 0.66
+
+## Cursor
+cursor:
+  style:
+    shape: Block
+    blinking: On
+
+  unfocused_hollow: true
+
+## Live config reload
+live_config_reload: true
+
+## Colors configuration
+colors:
+  # Default colors
+  primary:
+    background: "#000000"
+    foreground: "#e6e6e7"
+
+  # Normal colors
+  normal:
+    black: "#000000"
+    red: "#808080"
+    green: "#8F8F90"
+    yellow: "#9F9FA0"
+    blue: "#AFAFB0"
+    magenta: "#BFBFC0"
+    cyan: "#D0D0D0"
+    white: "#e6e6e7"
+
+  # Bright colors
+  bright:
+    black: "#a1a1a1"
+    red: "#808080"
+    green: "#8F8F90"
+    yellow: "#9F9FA0"
+    blue: "#AFAFB0"
+    magenta: "#BFBFC0"
+    cyan: "#D0D0D0"
+    white: "#e6e6e7"
+
+## Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    family: "Iosevka"
+    #style: Regular
+
+  # Bold font face
+  bold:
+    family: "Iosevka"
+    #style: Bold
+
+  # Italic font face
+  italic:
+    family: "Iosevka"
+    #style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: "Iosevka"
+    #style: Bold Italic
+
+  # Point size
+  size: 7
+
+  # Offset
+  #offset:
+  #  x: 0
+  #  y: 0
+
+  # Glyph offset
+  #glyph_offset:
+  #  x: 0
+  #  y: 0
