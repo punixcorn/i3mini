@@ -10,8 +10,8 @@ window:
     lines: 25
 
   padding:
-    x: 12 #og for both 12
-    y: 12
+    x: 1 #og for both 12
+    y: 1
 
   decorations: full
   startup_mode: Windowed
