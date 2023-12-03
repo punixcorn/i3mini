@@ -28,18 +28,18 @@ gaps outer 0
 
 ##-- Colors ------------------------------
 
-include ~/.config/i3/i3colors.conf
+include ~/.config/i3/colors
 
 ##-- Autostart ---------------------------
 
-exec_always --no-startup-id 	~/.config/i3/bin/autostart.sh
+exec_always --no-startup-id 	~/.config/i3/bin/autostart
 
 ##-- Key Bindings ------------------------
 
 # -- Terminal --
 
-bindsym $mod+Return 			exec --no-startup-id "~/.config/i3/bin/i3term.sh"
-bindsym $mod+Shift+Return 		exec --no-startup-id "~/.config/i3/bin/i3term.sh --float"
+bindsym $mod+Return 			exec --no-startup-id "~/.config/i3/bin/i3term"
+bindsym $mod+Shift+Return 		exec --no-startup-id "~/.config/i3/bin/i3term --float"
 
 # -- Apps --
 
@@ -153,7 +153,6 @@ set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
-set $ws5 "6"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1

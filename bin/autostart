@@ -21,7 +21,7 @@ xsetroot -cursor_name left_ptr 2>/dev/null
 [ -f /bin/feh ] && feh ~/.config/i3/wallpaper/wallpaper.png --bg-fill &
 
 # Lauch notification daemon
-[ -f /bin/dunst ] && ~/.config/i3/bin/i3dunst.sh
+[ -f /bin/dunst ] && dunst -config ~/.config/i3/dunstrc &
 
 # Lauch polybar
 [ -f /bin/polybar ] && polybar -c ~/.config/i3/polybar/config.ini &
@@ -35,5 +35,7 @@ disown
 
 # i3lock
 
-[ -f /bin/xss-lock ] && [ -f /bin/i3lock ] && xss-lock --transfer-sleep-lock -- i3lock -i ~/.wallpaper.png --nofork &
+[ -f /bin/xss-lock ] && [ -f /bin/i3lock ] && xss-lock -xss-lock --transfer-sleep-lock -- $HOME/.config/i3/bin/lockscreen-transfer-sleep-lock -- $HOME/.config/i3/bin/lockscreen --nofork &
 disown
+
+exit 0

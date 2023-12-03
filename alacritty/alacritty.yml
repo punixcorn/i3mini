@@ -68,26 +68,26 @@ colors:
 font:
   # Normal (roman) font face
   normal:
-    family: "Iosevka"
+    family: "Fantasque Sans Mono"
     #style: Regular
 
   # Bold font face
   bold:
-    family: "Iosevka"
+    family: "Fantasque Sans Mono"
     #style: Bold
 
   # Italic font face
   italic:
-    family: "Iosevka"
+    family: "Fantasque Sans Mono"
     #style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: "Iosevka"
+    family: "Fantasque Sans Mono"
     #style: Bold Italic
 
   # Point size
-  size: 7
+  size: 8
 
   # Offset
   #offset:
