@@ -34,8 +34,7 @@ disown
 [ -f /bin/mpd ] && exec mpd &
 
 # i3lock
-
-[ -f /bin/xss-lock ] && [ -f /bin/i3lock ] && xss-lock -xss-lock --transfer-sleep-lock -- $HOME/.config/i3/bin/lockscreen-transfer-sleep-lock -- $HOME/.config/i3/bin/lockscreen --nofork &
+[ -f /bin/xss-lock ] && [ -f /bin/i3lock ] && xss-lock -- $HOME/.config/i3/bin/lockscreen --transfer-sleep-lock --nofork &
 disown
 
 exit 0
